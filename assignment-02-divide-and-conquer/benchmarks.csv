@@ -1,0 +1,19 @@
+size,dataset,algorithm,median_time_ms,peak_traced_kib
+500,random,Merge Sort,0.5168,8.29
+500,random,Quick Sort,0.2587,4.65
+500,sorted,Merge Sort,0.3473,9.8
+500,sorted,Quick Sort,2.0037,21.3
+500,reverse,Merge Sort,0.3255,9.8
+500,reverse,Quick Sort,4.2268,6.19
+1000,random,Merge Sort,1.0688,16.83
+1000,random,Quick Sort,0.6037,8.74
+1000,sorted,Merge Sort,0.7207,19.59
+1000,sorted,Quick Sort,8.4683,57.08
+1000,reverse,Merge Sort,0.7482,19.59
+1000,reverse,Quick Sort,17.989,25.29
+2000,random,Merge Sort,2.3521,33.26
+2000,random,Quick Sort,1.304,16.8
+2000,sorted,Merge Sort,1.5753,39.12
+2000,sorted,Quick Sort,33.7416,126.73
+2000,reverse,Merge Sort,1.544,39.12
+2000,reverse,Quick Sort,70.014,64.98
