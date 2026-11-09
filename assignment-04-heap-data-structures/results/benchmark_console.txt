@@ -1,0 +1,38 @@
+Sorting benchmark (time = best of 5 runs, milliseconds)
+
+Input                      n                 Heapsort   Quicksort (randomized)               Merge sort   heap cmp / n log2 n
+Random                  1000                  0.44 ms                  0.44 ms                  0.34 ms                 1.696
+Random                  2000                  1.06 ms                  1.02 ms                  0.88 ms                 1.720
+Random                  4000                  2.42 ms                  2.19 ms                  1.97 ms                 1.744
+Random                  8000                  5.46 ms                  4.38 ms                  4.21 ms                 1.763
+Random                 16000                 11.73 ms                  9.66 ms                  9.26 ms                 1.779
+Random                 32000                 25.42 ms                 19.82 ms                 19.85 ms                 1.795
+Random                 64000                 55.53 ms                 41.99 ms                 43.12 ms                 1.807
+Sorted                  1000                  0.43 ms                  0.36 ms                  0.21 ms                 1.764
+Sorted                  2000                  1.02 ms                  0.83 ms                  0.52 ms                 1.786
+Sorted                  4000                  2.13 ms                  1.78 ms                  1.08 ms                 1.809
+Sorted                  8000                  4.77 ms                  3.68 ms                  2.43 ms                 1.826
+Sorted                 16000                 10.79 ms                  7.96 ms                  5.20 ms                 1.839
+Sorted                 32000                 22.81 ms                 15.93 ms                 11.52 ms                 1.850
+Sorted                 64000                 49.70 ms                 33.63 ms                 24.30 ms                 1.859
+Reverse-sorted          1000                  0.42 ms                  0.39 ms                  0.21 ms                 1.602
+Reverse-sorted          2000                  0.95 ms                  0.84 ms                  0.52 ms                 1.640
+Reverse-sorted          4000                  2.15 ms                  1.81 ms                  1.15 ms                 1.675
+Reverse-sorted          8000                  4.57 ms                  3.76 ms                  2.42 ms                 1.697
+Reverse-sorted         16000                 10.22 ms                  8.03 ms                  5.36 ms                 1.720
+Reverse-sorted         32000                 21.97 ms                 16.34 ms                 11.43 ms                 1.739
+Reverse-sorted         64000                 47.55 ms                 33.53 ms                 24.30 ms                 1.755
+Few unique values       1000                  0.42 ms                  0.38 ms                  0.31 ms                 1.593
+Few unique values       2000                  0.90 ms                  0.90 ms                  0.78 ms                 1.598
+Few unique values       4000                  1.96 ms                  1.88 ms                  1.74 ms                 1.616
+Few unique values       8000                  4.41 ms                  3.91 ms                  3.54 ms                 1.626
+Few unique values      16000                  9.17 ms                  8.27 ms                  8.02 ms                 1.637
+Few unique values      32000                 20.08 ms                 17.23 ms                 16.94 ms                 1.645
+Few unique values      64000                 43.25 ms                 35.70 ms                 35.75 ms                 1.653
+
+Scheduler simulation: 5000 tasks, 1 CPU, ~95% utilization, priorities 1 (low) to 5 (high)
+Policy              avg wait  p95 wait  max wait  missed DL   P5 wait   P4 wait   P3 wait   P2 wait   P1 wait
+FIFO                   10.46     27.05     38.77      19.8%     10.34     10.40     10.59     10.52     10.45
+Priority               11.09     59.76    198.80       9.5%      1.09      1.73      3.11      7.99     41.12
+Priority + aging       10.58     32.80     57.03      11.3%      2.40      5.01      9.97     15.05     20.39
+EDF                     9.98     36.98     70.37       6.6%      2.34      4.95      9.26     13.81     19.47

@@ -1,0 +1,13 @@
+n,operation,median_microseconds_per_op,repetitions,max_load
+500,insert,0.5161,7,0.75
+500,successful_search,0.1878,7,0.75
+500,delete,0.2362,7,0.75
+1000,insert,0.5839,7,0.75
+1000,successful_search,0.1963,7,0.75
+1000,delete,0.2567,7,0.75
+2000,insert,0.6122,7,0.75
+2000,successful_search,0.1978,7,0.75
+2000,delete,0.2594,7,0.75
+4000,insert,0.6494,7,0.75
+4000,successful_search,0.2032,7,0.75
+4000,delete,0.2581,7,0.75

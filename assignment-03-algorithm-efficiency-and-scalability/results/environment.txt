@@ -1,0 +1,6 @@
+Python: 3.15.2
+System: macOS-27.0.1-arm64-arm-64bit-Mach-O
+Sizes: [500, 1000, 2000, 4000]
+Repetitions: 7
+Timer: time.perf_counter_ns()
+Statistic: median

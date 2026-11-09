@@ -1,0 +1,8 @@
+Python: 3.15.2 (v3.15.2:5e58eaad7c5, Oct 25 2026, 14:19:34) [Clang 21.0.0 (clang-2100.1.1.101)]
+Implementation: CPython
+Platform: macOS-27.0.1-arm64-arm-64bit-Mach-O
+Processor: arm
+Mode: full
+Sizes: [1000, 2000, 4000, 8000, 16000, 32000, 64000]
+Repeats: 5
+Scheduler tasks: 5000
